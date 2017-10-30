@@ -3,7 +3,7 @@
 //  Emoji Dictionary
 //
 //  Created by Sophie Amin on 2017-10-29.
-//  Copyright © 2017 Sophie Amin. All rights reserved.
+//  Copyright © 2017 Sophie Amin. All rights reserved..
 //
 
 import UIKit
