@@ -32,11 +32,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true) //take away selection highlighting
         let emojis = emoji[indexPath.row]//assign emoji in the selected row
         performSegue(withIdentifier: "moveSegue", sender: emojis)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(sender)
+        let defVC = segue.destination as! DefinitionViewController
+        defVC.emojis = sender as! String
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
