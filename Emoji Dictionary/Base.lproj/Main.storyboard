@@ -61,6 +61,8 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="LUJ-gP-9id" firstAttribute="centerX" secondItem="xqV-0F-K1T" secondAttribute="centerX" id="KNF-KY-1HD"/>
+                                    <constraint firstItem="LUJ-gP-9id" firstAttribute="centerX" secondItem="xqV-0F-K1T" secondAttribute="centerX" id="Mfi-EQ-BwC"/>
+                                    <constraint firstItem="LUJ-gP-9id" firstAttribute="centerX" secondItem="xqV-0F-K1T" secondAttribute="centerX" id="cMY-Hc-9EI"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A purple devil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6I7-aG-YUa">
@@ -72,18 +74,43 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4o-Ld-HQ1">
+                                <rect key="frame" x="122.5" y="284.5" width="130" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="afX-Qq-qsU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGb-LQ-jWB">
+                                <rect key="frame" x="126.5" y="324.5" width="122" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="JaV-PK-e2D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6I7-aG-YUa" firstAttribute="centerX" secondItem="Abd-GB-LCc" secondAttribute="centerX" id="447-BR-UeM"/>
                             <constraint firstItem="6I7-aG-YUa" firstAttribute="top" secondItem="xqV-0F-K1T" secondAttribute="bottom" constant="20" id="5wp-eW-Myp"/>
+                            <constraint firstItem="x4o-Ld-HQ1" firstAttribute="centerX" secondItem="Abd-GB-LCc" secondAttribute="centerX" id="Bgy-5H-BuY"/>
+                            <constraint firstItem="6I7-aG-YUa" firstAttribute="centerX" secondItem="Abd-GB-LCc" secondAttribute="centerX" id="FhE-ch-ITC"/>
                             <constraint firstItem="xqV-0F-K1T" firstAttribute="top" secondItem="1cW-4j-eLK" secondAttribute="top" constant="41" id="HkA-UO-uQ6"/>
+                            <constraint firstItem="uGb-LQ-jWB" firstAttribute="centerX" secondItem="Abd-GB-LCc" secondAttribute="centerX" id="VWc-Zk-YHB"/>
+                            <constraint firstItem="x4o-Ld-HQ1" firstAttribute="top" secondItem="6I7-aG-YUa" secondAttribute="bottom" constant="20" id="YKX-wI-H0n"/>
                             <constraint firstItem="6I7-aG-YUa" firstAttribute="centerX" secondItem="Abd-GB-LCc" secondAttribute="centerX" id="lhe-Ca-Wpa"/>
+                            <constraint firstItem="uGb-LQ-jWB" firstAttribute="top" secondItem="x4o-Ld-HQ1" secondAttribute="bottom" constant="20" id="ohq-cb-Pon"/>
                             <constraint firstItem="xqV-0F-K1T" firstAttribute="leading" secondItem="1cW-4j-eLK" secondAttribute="leading" constant="147" id="uh5-vb-ayT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1cW-4j-eLK"/>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="uGb-LQ-jWB" id="mv1-Fz-cTX"/>
+                        <outlet property="categoryLabel" destination="x4o-Ld-HQ1" id="okr-Xl-koX"/>
                         <outlet property="definitionLabel" destination="6I7-aG-YUa" id="qk3-Cl-wNV"/>
                         <outlet property="emojiLabel" destination="LUJ-gP-9id" id="lmk-ZY-XLm"/>
                     </connections>
